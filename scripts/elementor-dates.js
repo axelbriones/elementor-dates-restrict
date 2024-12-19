@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const interval = setInterval(() => {
-        const checkInField = document.getElementById('form-field-inhceckning');
+        const checkInField = document.getElementById('form-field-incheckning');
         const checkOutField = document.getElementById('form-field-utcheckning');
 
         if (checkInField && checkOutField) {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             // Disable check-out field by default
-            checkOutField.disabled = true; // << NUEVA LÍNEA AGREGADA
+            checkOutField.disabled = true; // << NEWLY ADDED LINE
 
             // Enable and restrict dates in check-out field dynamically
             checkInField.addEventListener('change', function() {

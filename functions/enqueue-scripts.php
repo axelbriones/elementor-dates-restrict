@@ -13,3 +13,4 @@ function enqueue_elementor_dates_restrict() {
 
 // Hook the function to WordPress' enqueue scripts action
 add_action('wp_enqueue_scripts', 'enqueue_elementor_dates_restrict');
+?>

@@ -1,17 +1,17 @@
 # Elementor Date Restriction Script
 
-This script provides dynamic date management for Elementor forms, ensuring proper dependencies between a check-in (`inhceckning`) field and a check-out (`utcheckning`) field. It is ideal for booking systems or reservation forms where dates must follow a logical sequence.
+This script provides dynamic date management for Elementor forms, ensuring proper dependencies between a check-in (`incheckning`) field and a check-out (`utcheckning`) field. It is ideal for booking systems or reservation forms where dates must follow a logical sequence.
 
 ## Features
 
 - **Dynamic Minimum Date for Check-in Field**:
-  - The `inhceckning` field automatically sets its minimum selectable date to today's date, preventing past dates from being selected.
+  - The `incheckning` field automatically sets its minimum selectable date to today's date, preventing past dates from being selected.
 
 - **Default State Management**:
-  - The `utcheckning` field is disabled by default and only becomes active once a valid date is selected in the `inhceckning` field.
+  - The `utcheckning` field is disabled by default and only becomes active once a valid date is selected in the `incheckning` field.
 
 - **Dynamic Minimum Date for Check-out Field**:
-  - Once a date is selected in `inhceckning`, the `utcheckning` field dynamically updates to allow only dates equal to or after the selected check-in date.
+  - Once a date is selected in `incheckning`, the `utcheckning` field dynamically updates to allow only dates equal to or after the selected check-in date.
 
 - **Integration with Flatpickr**:
   - The script leverages the Flatpickr library for a modern, user-friendly datepicker interface.
@@ -26,7 +26,7 @@ This script provides dynamic date management for Elementor forms, ensuring prope
    - Flatpickr is initialized for both the check-in and check-out fields.
 
 2. **Dynamic Updates**:
-   - The `inhceckning` field has a minimum date set to today.
+   - The `incheckning` field has a minimum date set to today.
    - The `utcheckning` field’s datepicker dynamically adjusts its minimum date to match the selected check-in date.
 
 3. **Field States**:
